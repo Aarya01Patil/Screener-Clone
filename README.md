@@ -71,17 +71,17 @@ The live version of the Stock Screening Tool is available at: https://screenercl
 ## Sample Queries
 
 ### Large Cap Growth Stocks:
-Market Capitalization > 10000
-ROE > 15
+Market Capitalization > 10000 AND <br>
+ROE > 15 AND <br>
 EPS Growth > 10
 
 ### Dividend Value Stocks:
-Dividend Yield > 2
-P/E Ratio < 20
+Dividend Yield > 2 AND <br>
+P/E Ratio < 20 AND <br>
 Debt-to-Equity Ratio < 1
 
 ### High Liquidity Stocks:
-Current Ratio > 2
+Current Ratio > 2 AND <br>
 Gross Margin > 40
 
 ## References
