@@ -169,7 +169,7 @@ const HomeScreen: React.FC = () => {
                 <Typography variant="body2" color="text.secondary">
                     Data provided by C-MOTS Internet Technologies Pvt Ltd
                 </Typography>
-                <a href="#" className="footer-link">Terms & Privacy.</a>
+                <a href="/terms-and-privacy" className="footer-link">Terms & Privacy.</a>
             </Box>
         </Box>
     );
