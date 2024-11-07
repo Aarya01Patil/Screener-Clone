@@ -1,0 +1,134 @@
+.query-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.query-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.query-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.example-box {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 4px;
+  margin-left: 24px;
+}
+
+.example-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.example-content {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.query-button {
+  background: #6c5ce7 !important;
+  color: white !important;
+  padding: 8px 24px !important;
+  text-transform: none !important;
+  border-radius: 20px !important;
+  font-weight: bold;
+}
+
+.results-container {
+  margin-top: 24px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.theme-section {
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.theme-card {
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    height: 100%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.theme-card:hover {
+    border-color: #6c5ce7;
+    background-color: #f8f9fa;
+}
+
+.create-screen-button {
+    background-color: #6c5ce7 !important;
+    color: white !important;
+    text-transform: none !important;
+    padding: 8px 24px !important;
+    border-radius: 20px !important;
+}
+
+.sector-button {
+    color: #666 !important;
+    text-transform: none !important;
+    padding: 4px 12px !important;
+    border-radius: 20px !important;
+    transition: color 0.2s;
+}
+
+.sector-button:hover {
+    background-color: #f0f0f0 !important;
+    color: #6c5ce7 !important;
+}
+
+.footer {
+    padding: 24px;
+    background-color: #f5f6fa;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 24px;
+}
+
+.footer a {
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+

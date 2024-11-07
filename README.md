@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Stock Screening Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
+This project is a web-based stock screening tool inspired by the "Create New Screen" feature on Screener.in. It allows users to filter and view stocks based on specific criteria, closely matching the design and interaction of Screener.in.
 
-## Available Scripts
+## Dataset
+The tool uses a static dataset of 500 stocks, each containing the following parameters:
+- **Market Capitalization** – Market cap in billions
+- **P/E Ratio** – Price to earnings ratio
+- **ROE** – Return on equity as a percentage
+- **Debt-to-Equity Ratio** – Debt relative to shareholder equity
+- **Dividend Yield** – Dividend yield as a percentage
+- **Revenue Growth** – Revenue growth rate as a percentage
+- **EPS Growth** – Earnings per share growth rate as a percentage
+- **Current Ratio** – Measure of liquidity (assets/liabilities)
+- **Gross Margin** – Gross margin as a percentage
 
-In the project directory, you can run:
+## Features and Requirements
 
-### `npm start`
+### User Interface and Input Fields
+- The interface is designed to closely resemble Screener.in, allowing users to input filter criteria in a query-like format.
+- Users can input conditions in a sequential format, such as:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  `Market Capitalization > 10000 AND ROE > 15 AND P/E Ratio < 20`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Each filter parameter supports conditions like Greater than, Less than, or Equal to.
+- Implements an AND-only logic: all specified conditions must be met for a stock to appear in the results.
 
-### `npm test`
+### Screening Logic
+- Filtering logic evaluates each stock according to the defined conditions and returns only those that meet all specified criteria.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Display Results
+- Screened stocks are displayed in a tabular format, with columns for each of the 9 parameters.
+- Includes sorting functionality on each column, allowing users to sort by Market Capitalization, P/E Ratio, ROE, etc.
+- Paginate results if more than 10 stocks are displayed.
 
-### `npm run build`
+## Tech Stack
+- **React** with **TypeScript** and **Material-UI** for styling.
+- The application is designed to be a single-page application focusing on the screener functionality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Styling and User Experience
+- The design aims to replicate Screener.in's look and feel, focusing on simplicity, usability, and responsiveness.
+- No login/logout functionality is implemented.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Bonus Points
+- **Responsive Design**: The interface is responsive and works smoothly on both desktop and mobile devices.
+- **Deployment**: The project can be deployed to platforms like Vercel or Netlify.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup Instructions
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Clone the Repository:
+```bash
+git clone <repository-url>
+cd stock-screener
