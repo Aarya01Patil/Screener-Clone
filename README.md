@@ -50,5 +50,43 @@ The tool uses a static dataset of 500 stocks, each containing the following para
 
 ### Clone the Repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Aarya01Patil/Screener-Clone
 cd stock-screener
+```
+
+### Install Dependencies:
+```bash
+npm install
+```
+
+### Run the Application:
+```bash
+ npm start
+```
+
+## Live Demo
+
+The live version of the Stock Screening Tool is available at: https://screenerclone.netlify.app
+
+## Sample Queries
+
+### Large Cap Growth Stocks:
+Market Capitalization > 10000
+ROE > 15
+EPS Growth > 10
+
+### Dividend Value Stocks:
+Dividend Yield > 2
+P/E Ratio < 20
+Debt-to-Equity Ratio < 1
+
+### High Liquidity Stocks:
+Current Ratio > 2
+Gross Margin > 40
+
+## References
+Screener.in's Create New Screen: Explore this feature to understand its functionality and UX design. The closer your tool can match Screener.in's design and experience, the better.
+
+## Assumptions
+The dataset is static and does not update in real-time.
+The application focuses on replicating the UI/UX of Screener.in without additional features like user authentication.
